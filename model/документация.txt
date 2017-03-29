@@ -1,0 +1,200 @@
+==========================================================
+Name: Model_Driver
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Model_Driver 
+
+/** Драйвер Помощник работы с БД*/
+Public Methods
+
+public __construct ( ) user-defined
+/** контсруктор*/
+
+public static Instance ( ) user-defined
+/** Получение единственного экземпляра (одиночка)*/
+
+public Select ( $query ) user-defined
+/** Выборка строк $query - полный текст SQL запроса
+ результат - массив выбранных объектов*/
+
+public Insert ( $table, $object ) user-defined
+/** Вставка строки $table - имя таблицы 
+$object - ассоциативный массив с парами вида "имя столбца - значение" 
+результат - идентификатор новой строки*/
+
+public Update ( $table, $object, $where ) user-defined
+/** Изменение строк $table - имя таблицы 
+$object - ассоциативный массив с парами вида "имя столбца - значение" 
+$where - условие (часть SQL запроса) 
+результат - число измененных строк*/
+
+public Delete ( $table, $where ) user-defined
+/** Удаление строк $table - имя таблицы 
+$where - условие (часть SQL запроса) 
+результат - число удаленных строк */
+Private Data Members
+
+private static instance
+
+private host
+
+private name
+
+private user
+
+private pass
+=======================================================================
+Name: Model_Basket
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Model_Basket 
+
+/** Менеджер для работы с корзиной покупателя */
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор*/
+
+public action_add ( $customer, $goodsid, $quantity ) user-defined
+/** метод добавляет новый товар в корзину и возврощает идентификатор новой строки*/
+
+public action_update ( $customer, $goodsid, $quantity ) user-defined
+/** метод изменяет количесво определеного товара в корзине и выводит новую сумму заказа*/
+
+public action_delete ( $id, $customer ) user-defined
+/** метод удаляет товар из корзины*/
+
+public action_select ( $customer ) user-defined
+/** метод выводит корзину пользователя*/
+
+public action_resave ( $customer ) user-defined
+/** метод пересохраняет товары из корзины в заказы*/
+
+public action_delete_basket ( $customer ) user-defined
+/** метод удаляет корзину покупателя*/
+
+public __destruct ( ) user-defined
+/** Деструктор*/
+Private Data Members
+
+private action
+=====================================================================
+Name: Model_Order
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Model_Order 
+
+/** Менеджер для работы с заказами и покупателями */
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор*/
+
+public action_custom ( $customer, $name, $secondname, $email, $tel, $status, $date ) user-defined
+/** метод сохраняет данные покупателей в базе данных и сохраняет за покупателем его заказ*/
+
+public action_orders ( ) user-defined
+/** метод возврощает информацию о заказах*/
+
+public action_type ( $id_order ) user-defined
+/** метод отмечает обработанные заказы*/
+
+public __destruct ( ) user-defined
+/** Деструктор*/
+Private Data Members
+
+private action
+========================================================================
+Name: Model_Category
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Model_Category 
+
+/** Менеджер для работы с категориями товаров */
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор*/
+
+public action_create ( $name ) user-defined
+/** метод создает новую категорию*/
+
+public action_delete ( $name ) user-defined
+/** метод удаляет категорию*/
+
+public action_select ( ) user-defined
+/** метод выбирает все категори*/
+
+public action_update ( $name, $named ) user-defined
+/** метод обновляет название категории*/
+
+public __destruct ( ) user-defined
+/** Деструктор*/
+Private Data Members
+
+private action
+======================================================================
+Name: Model_Catalog
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Model_Catalog 
+
+/** Менеджер для работы с каталогом товаров */
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор*/
+
+public action_create ( $id_cat, $name, $price ) user-defined
+/** метод добавляет новый товар в католог*/
+
+public action_delete ( $id ) user-defined
+/** метод удаляет товар из каталога*/
+
+public action_select ( $id_cat ) user-defined
+/** метод выбируат все товары или товары одной категории из каталога*/
+
+public action_update ( $id, $object ) user-defined
+/** метод обновляет информацию о товаре*/
+
+public __destruct ( ) user-defined
+/** Деструктор*/
+Private Data Members
+
+private action
+======================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

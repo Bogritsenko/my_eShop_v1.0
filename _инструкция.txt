@@ -1,0 +1,65 @@
+ИНСТРУКЦИЯ ПО ИСПОЛЬЗОВАНИЮ
+=================
+- Польностью готовый интернет магазин условных товаров
+  сделан на архитектуре MVC
+  и поэтому легко расширяемый.
+- Реализована технология  drag and drop 
+  для добавления товаров в корзину,
+  легко добавить свои категории, в данный момент товар 
+  разбит на 2 категории.
+- используеться php5, javascript, jquery, mysql, html5
+- одна точка входа - index.php
+- три основные папки: model, view, controller
+- модель, по менеджеру на каждую группу задач.
+- контроллеры, по штуке на каждую страницу.
+- папка script - для клиентских сценариев на javascript и jquery
+- в каждой папке документация для каждого класса сделана с помощью классов отражения
+
+ПАПКА CONTROLLER 
+=================
+- документация 
+- Controller_Base.php
+- Controller_Main.php
+- Controller_Shop.php
+- Controller_Basket.php
+- Controller_Order.php
+- Controller_About.php
+- Controller_Service.php
+
+ПАПКА MODEL
+=================
+- документация
+- Model_Driver.php
+- Model_Basket.php
+- Model_Order.php
+- Model_Category.php
+- Model_Catalog.php  
+
+ПАПКА VIEW
+=================
+- документация
+- main.php
+- template.php
+- shelf.php
+- form.php
+- basket.php
+- orderform.php
+- about.php
+- service.php
+- shopping_cart.php
+- main.css
+- pg.css
+
+ПАПКА SCRIPT
+=================
+- add.js
+- jquery-1.6.3.min.js
+- jquery-ui-1.8.16.custom.min.js
+
+
+УСТАНОВКА
+=========
+1. Откройте файл Model_Driver.php и установите ваши настройки для подключения к базе данных.
+2. Выполните скрипт импортирования создания объектов БД e-shop.sql .
+3. Сайт готов к работе.
+

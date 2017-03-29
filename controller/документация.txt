@@ -1,0 +1,327 @@
+=============================================================
+Name: Name: Controller_Base
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+abstract class Controller_Base 
+
+/** Базовый класс контроллера.*/
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор.*/
+
+public Request ( ) user-defined
+/** Полная обработка HTTP запроса.*/
+Protected Methods
+
+protected OnInput ( ) user-defined
+/** Виртуальный обработчик запроса. */
+
+protected OnOutput ( ) user-defined
+/** Виртуальный генератор HTML.*/
+
+protected IsGet ( ) user-defined
+/** Запрос произведен методом GET? */
+
+protected IsPost ( ) user-defined
+/** Запрос произведен методом POST?*/
+
+protected View ( $fileName, $vars = Array ) user-defined
+/** Генерация HTML шаблона в строку.*/
+Private Data Members
+
+private start_time
+=================================================================
+Name: Controller_Main
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Controller_Main extends Controller_Base 
+
+/** Контроллер главной страницы сайта.*/
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор.*/
+
+public Request ( ) user-defined
+/** Полная обработка HTTP запроса.*/
+Protected Methods
+
+protected OnInput ( ) user-defined
+/** Виртуальный обработчик запроса.*/
+
+protected OnOutput ( ) user-defined
+/** Виртуальный генератор HTML.*/
+
+protected IsGet ( ) user-defined
+/** Запрос произведен методом GET? */
+
+protected IsPost ( ) user-defined
+/** Запрос произведен методом POST?*/
+
+protected View ( $fileName, $vars = Array ) user-defined
+/** Генерация HTML шаблона в строку.*/
+Private Data Members
+
+private start_time
+====================================================================
+Name: Controller_Shop
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Controller_Shop extends Controller_Base 
+
+/** Контроллер торгового зала магазина.*/
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор.*/
+
+public Request ( ) user-defined
+/** Полная обработка HTTP запроса.*/
+Protected Methods
+
+protected OnInput ( ) user-defined
+/** Виртуальный обработчик запроса.*/
+
+protected OnOutput ( ) user-defined
+/** Виртуальный генератор HTML.*/
+
+protected IsGet ( ) user-defined
+/** Запрос произведен методом GET? */
+
+protected IsPost ( ) user-defined
+/** Запрос произведен методом POST?*/
+
+protected View ( $fileName, $vars = Array ) user-defined
+/** Генерация HTML шаблона в строку.*/
+Public Data Members
+
+public content
+Private Data Members
+
+private select
+
+private shopping_cart
+
+private shelf
+
+private form
+=====================================================================
+Name: Controller_Basket
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Controller_Basket extends Controller_Base 
+
+/** Контроллер корзины покупателя.*/
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор.*/
+
+public Add ( $id ) user-defined
+/** метод добавляет товар в корзину */
+
+public Update ( $id, $quantity ) user-defined
+/** метод изменяет количесво определеного товара в корзине и выводит новую сумму всех заказов*/
+
+public Request ( ) user-defined
+/** Полная обработка HTTP запроса.*/
+Protected Methods
+
+protected OnInput ( ) user-defined
+/** Виртуальный обработчик запроса.*/
+
+protected OnOutput ( ) user-defined
+/** Виртуальный генератор HTML.*/
+
+protected IsGet ( ) user-defined
+/** Запрос произведен методом GET? */
+
+protected IsPost ( ) user-defined
+/** Запрос произведен методом POST?*/
+
+protected View ( $fileName, $vars = Array ) user-defined
+/** Генерация HTML шаблона в строку.*/
+Public Data Members
+
+public content
+Private Data Members
+
+private select
+
+private basket
+====================================================================
+Name: Controller_Order
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Controller_Order extends Controller_Base 
+
+/** Контроллер страницы оформления заказа.*/
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор.*/
+
+public Request ( ) user-defined
+/** Полная обработка HTTP запроса.*/
+Protected Methods
+
+protected OnInput ( ) user-defined
+/** Виртуальный обработчик запроса.*/
+
+protected OnOutput ( ) user-defined
+/** Виртуальный генератор HTML.*/
+
+protected IsGet ( ) user-defined
+/** Запрос произведен методом GET? */
+
+protected IsPost ( ) user-defined
+/** Запрос произведен методом POST?*/
+
+private function send ($name, $email) user-defined
+/** метод отправляет письмо покупателю */
+
+protected View ( $fileName, $vars = Array ) user-defined
+/** Генерация HTML шаблона в строку.*/
+Public Data Members
+
+public content
+Private Data Members
+
+private orderform
+===============================================================
+Name: Controller_About
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Controller_About extends Controller_Base 
+
+/** Контроллер страницы About.*/
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор.*/
+
+public Request ( ) user-defined
+/** Полная обработка HTTP запроса.*/
+Protected Methods
+
+protected OnInput ( ) user-defined
+/** Виртуальный обработчик запроса.*/
+
+protected OnOutput ( ) user-defined
+/** Виртуальный генератор HTML.*/
+
+protected IsGet ( ) user-defined
+/** Запрос произведен методом GET? */
+
+protected IsPost ( ) user-defined
+/** Запрос произведен методом POST?*/
+
+protected View ( $fileName, $vars = Array ) user-defined
+/** Генерация HTML шаблона в строку.*/
+Public Data Members
+
+public content
+Private Data Members
+
+private about
+======================================================================
+Name: Controller_Service
+
+ Date: Sep-13-2011
+PHP version: 5.3.5
+Type: User-defined
+
+class Controller_Service extends Controller_Base 
+
+/** Контроллер страницы для менеджеров по продаже.*/
+Public Methods
+
+public __construct ( ) user-defined
+/** Конструктор.*/
+
+public Request ( ) user-defined
+/** Полная обработка HTTP запроса.*/
+Protected Methods
+
+protected OnInput ( ) user-defined
+/** Виртуальный обработчик запроса.*/
+
+protected OnOutput ( ) user-defined
+/** Виртуальный генератор HTML.*/
+
+protected IsGet ( ) user-defined
+/** Запрос произведен методом GET? */
+
+protected IsPost ( ) user-defined
+/** Запрос произведен методом POST?*/
+
+protected View ( $fileName, $vars = Array ) user-defined
+/** Генерация HTML шаблона в строку.*/
+Public Data Members
+
+public content
+Private Data Members
+
+private service
+
+private select
+===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

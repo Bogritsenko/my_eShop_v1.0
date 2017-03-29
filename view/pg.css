@@ -1,0 +1,153 @@
+/**main */
+body {
+  padding: 0;
+  margin: 0;
+  color: #5F5F5F;
+}
+/** BASKET */
+h1{
+ 
+color: #9900FF;
+font-family: sans-serif;
+font-style: italic;   
+}
+#bs{
+font-family: sans-serif;
+font-size: medium;
+font-style: italic; 
+color: #000033;       
+}
+#bs a:link, #bs a:visited
+{
+font-family: sans-serif;
+font-size: medium;
+font-style: italic;
+color: #0066CC;
+background-color: #99CCFF; 
+border: 1px solid #666666;
+text-decoration: none;
+padding-top: .3em;
+padding-bottom: .3em;
+padding-left: .8em;
+padding-right: .8em;
+}
+#bs a:hover
+{
+color: #0066CC;
+background-color: #99CCFF; 
+border: 1px solid #CCC;
+text-decoration: none;
+padding-top: .3em;
+padding-bottom: .3em;
+padding-left: .8em;
+padding-right: .8em;
+}
+#notbs a:link, #notbs a:visited
+{
+color: #ffffff;
+text-decoration: none;
+background-color: #CCC; 
+border: 1px solid #666666;
+padding-top: .3em;
+padding-bottom: .3em;
+padding-left: .8em;
+padding-right: .8em;
+}
+#notbs a:hover
+{
+color: #ffffff;
+background-color: #CCC; 
+border: 1px solid #CCC;
+text-decoration: none;
+padding-top: .3em;
+padding-bottom: .3em;
+padding-left: .8em;
+padding-right: .8em;
+}
+/** END BASKET */
+
+/**  ABOUT */
+.about{ 
+width: 75%;
+height: auto;
+margin-bottom: 20px;
+font-size: medium;
+font-family: sans-serif;
+font-style: italic;}
+/** END ABOUT */
+
+/** ORDER */
+input, select{ margin-bottom: 3px;}
+label { float: left; width: 150px;}
+.reg_block{ 
+width: 100%;
+height: auto;
+margin-bottom: 20px;
+font-size: medium;
+font-family: sans-serif;
+font-style: italic;}
+.button { font-size: 1.7em; color: #00008B; font-family: Verdana, Arial, sans-serif;}
+/** END ORDER */
+
+/* These are our floating layers. */
+body { margin: 0; padding: 0; }
+div#ItemDrag { position: absolute; visibility: hidden; left: 40px; top: 30px; }/*  */
+div#cart { position: fixed; bottom: 0%; height: 110px; width: 100%; }
+div#PopBox { position: absolute; visibility: hidden; left: 10px; top: 10px;}
+/*.cart { position: fixed; bottom: 0%; height: 110px; width: 100%; }*/
+
+ #shirt-mystery {
+background: red;
+}
+
+/* Item Fonts */
+
+.item-title {
+  font-size: 14px;
+  font-family: "Helvetica Neue", "Helvetica";
+  font-weight: bold;
+}
+
+/* Cart Fonts */
+
+.cart-help {
+  font-size: 20px;
+  font-family: "Helvetica";
+  color: #5F5F5F;
+  font-weight: normal;
+}
+.cart-header {
+  font-size: 18px;
+  font-family: "Helvetica Neue", "Helvetica";
+  color: #255B7F;
+  font-weight: bold;
+}
+.cart-header2 {
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #999999;
+  font-weight: normal;
+}
+.cart-total {
+  font-size: 18px;
+  font-family: "Helvetica";
+  color: #565656;
+  font-weight: normal;
+}
+.cart-total-dark {
+  font-size: 13px;
+  font-family: "Helvetica";
+  color: #000000;
+  font-weight: normal;
+}
+/* On This Page */
+
+.copyright {
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: #C1C1C1;
+}
+
+
+
+
